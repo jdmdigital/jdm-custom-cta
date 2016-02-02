@@ -9,8 +9,8 @@ There are many cases when theme developers may want the ability to add a call-to
 The plugin does **NOT** enqueue any resources or make any significant change to the speed of the site. It simply adds this handy functionality using a custom post meta box and give theme developers a new function they can use in their themes.
 
 ## Installation
-1. [Download the plugin](http://labs.jdmdigital.co/wp-content/uploads/sites/4/2016/02/jdm-custom-cta-v0.2.zip "Download the plugin from JDM Labs") (not on WordPress repo yet)
-2. Install the plugin (we’re sure you know how)
+1. [Download the plugin](http://labs.jdmdigital.co/wp-content/uploads/sites/4/2016/02/jdm-custom-cta-v0.2.zip "Download the plugin from JDM Labs") or here on GitHub
+2. Install the plugin - [tutorial here for using GitHub Updater](http://labs.jdmdigital.co/plugins/github-updates/)
 3. Activate the plugin
 4. Go to one of your Pages or "Add New Page"
 5. Look for the new post meta box titled Call to Action (CTA) under the WYSIWYG editor

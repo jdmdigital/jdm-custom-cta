@@ -1,6 +1,7 @@
-![alt tag](http://labs.jdmdigital.co/wp-content/uploads/sites/4/2016/02/cta-banner-big-770x400.png)
 # JDM Custom CTA
 This simple, unbranded WordPress plugin adds Call-to-Action (CTA) fields to the editor and allows theme developers to display it using simple functions.  More information can be found on [JDM Labs](http://labs.jdmdigital.co/code/jdm-custom-cta/ "JDM Labs").
+
+![alt tag](http://labs.jdmdigital.co/wp-content/uploads/sites/4/2016/02/cta-banner-big-770x400.png)
 
 ## Description
 There are many cases when theme developers may want the ability to add a call-to-action (or CTA) button to their theme that's easily editable from the WordPress backend. Originally created for a client, this reusable plugin does just that.

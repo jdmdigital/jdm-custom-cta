@@ -58,11 +58,6 @@ function jdm_meta_box_callback( $post ) {
  */
 function jdm_save_meta_box_data( $post_id ) {
 
-	/*
-	 * We need to verify this came from our screen and with proper authorization,
-	 * because the save_post action can be triggered at other times.
-	 */
-
 	// Check if our nonce is set.
 	if ( ! isset( $_POST['jdm_meta_box_nonce'] ) ) {
 		return;
@@ -84,34 +79,27 @@ function jdm_save_meta_box_data( $post_id ) {
 	}
 
 	/* OK, it's safe for us to save the data now. */
-	
-	// Make sure that it is set.
-	/*if ( !isset( $_POST['xbrl-link'] ) && !isset( $_POST['pdf-link'] ) ) {
-		return;
-	}*/
 
 	// Sanitize user input.
 	$ctaurl = sanitize_text_field( $_POST['ctaurl'] );
 	$ctatxt = sanitize_text_field( $_POST['ctatxt'] );
 
 	// Add or Update the meta field in the database.
-	//update_post_meta( $post_id, 'xbrl', $my_data );
-	if ( ! update_post_meta ($post_id, 'ctaurl', $ctaurl) ) { 
+	if ( !update_post_meta ($post_id, 'ctaurl', $ctaurl) ) { 
 		add_post_meta($post_id, 'ctaurl', $ctaurl, true );	
 	};
 	
-	if ( ! update_post_meta ($post_id, 'ctatxt', $ctatxt) ) { 
+	if ( !update_post_meta ($post_id, 'ctatxt', $ctatxt) ) { 
 		add_post_meta($post_id, 'ctatxt', $ctatxt, true );	
 	};
 }
 add_action( 'save_post', 'jdm_save_meta_box_data' );
 
+
 /*
 	CTA Plugin Functions
 	Reference: http://labs.jdmdigital.co/code/jdm-custom-cta/
 */
-
-
 
 // Checks if the ctaurl post meta field is set/and not empty
 if(!function_exists('have_cta')) {
@@ -125,19 +113,6 @@ if(!function_exists('have_cta')) {
 			return false;
 		}
 	} // end have_cta()
-}
-
-if(!function_exists('has_cta')) {
-	function has_cta(){
-		global $page, $post; 
-		$ctaurl = get_post_meta( $post->ID, 'ctaurl', true ); // the URL
-		
-		if(isset($ctaurl) && !empty($ctaurl) ) {
-			return true;
-		} else {
-			return false;
-		}
-	} // end has_cta()
 }
 
 // Returns the HTML CTA based with the parameter class(es)
@@ -161,9 +136,7 @@ if(!function_exists('get_cta')) {
 		
 		if(isset($ctaurl) && !empty($ctaurl) ) {
 			return '<a href="'.$ctaurl.'" class="'.$class.'">'.$ctatxt.'</a>';
-		} else {
-			//return '<a href="#oops" class="'.$class.'">'.$ctatxt.'</a>';
-		}
+		} 
 	} // end get_cta()
 }
 
@@ -190,9 +163,7 @@ if(!function_exists('the_cta') && function_exists('get_cta')) {
 		
 		if(isset($ctaurl) && !empty($ctaurl) ) {
 			echo '<a href="'.$ctaurl.'" class="'.$class.'">'.$ctatxt.'</a>';
-		} else {
-			//echo '<a href="#oops" class="'.$class.'">'.$ctatxt.'</a>';
-		}
+		} 
 	} // end the_cta()
 }
 

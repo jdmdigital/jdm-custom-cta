@@ -8,6 +8,8 @@
  * Author: JDM Digital
  * Author URI: http://jdmdigital.co
  * License: GPLv2 or later
+ * GitHub Plugin URI: https://github.com/jdmdigital/jdm-custom-cta
+ * GitHub Branch: master
  */
 
 // Adds a box to the main column on the Post edit screen.

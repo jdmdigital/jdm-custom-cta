@@ -33,6 +33,9 @@ Oh, that's the default.  If you don't set a value in the CTA Button Text, it'll 
 
 ## Changelog
 
+**0.5**
+* GitHub Updater enabled for automatic updates.
+
 **0.2**
 * Reusable plugin created.
 * Version updated.

@@ -4,7 +4,11 @@ Donate link: http://jdmdigital.co
 Tags: call to action, cta
 Requires at least: 3.0.1
 Tested up to: 4.4.2
+<<<<<<< HEAD
 Stable tag: 0.9
+=======
+Stable tag: 0.5
+>>>>>>> origin/master
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,14 +16,16 @@ This simple, unbranded plugin adds Call-to-Action (CTA) fields to the editor and
 
 == Description ==
 
-here are many cases when theme developers may want the ability to add a call-to-action (or CTA) button to their theme that's easily editable from the WordPress backend. Originally created for a client, this reusable plugin does just that.
+There are many cases when theme developers may want the ability to add a call-to-action (or CTA) button to their theme that's easily editable from the WordPress backend. Originally created for a client, this reusable plugin does just that.
 
-The plugin does **NOT** enqueue any resources or make any significant change to the speed of the site. It simply adds this handy functionality using a custom post meta box and give theme developers a new function they can use in their themes.
+This plugin does **NOT** enqueue any resources or make any significant change to the speed of the site. 
+
+It simply adds this handy functionality using a custom post meta box and give theme developers a new function they can use in their themes.
 
 == Installation ==
 
-1. Download the plugin from [JDM Labs](http://labs.jdmdigital.co/wp-content/uploads/sites/4/2016/02/jdm-custom-cta-v0.2.zip) or [GitHub](https://github.com/jdmdigital/jdm-custom-cta) (wordpress.org coming soon)
-1. Install the plugin (we’re sure you know how)
+1. Download the plugin from [JDM Labs](http://labs.jdmdigital.co/wp-content/uploads/sites/4/2016/02/jdm-custom-cta.zip) or [GitHub](https://github.com/jdmdigital/jdm-custom-cta) (wordpress.org coming soon)
+1. Install the plugin [using GitHub Updater](http://labs.jdmdigital.co/plugins/github-updates/)
 1. Activate the plugin
 1. Go to one of your Pages or "Add New Page"
 1. Look for the new post meta box titled Call to Action (CTA) under the WYSIWYG editor
@@ -42,9 +48,12 @@ Oh, that's the default.  If you don't set a value in the CTA Button Text, it'll 
 
 == Screenshots ==
 
-1. This is a description for screenshot-1.
+1. View of the new page meta box with options for the CTA URL and button text.
 
 == Upgrade Notice ==
+
+= 0.5 =
+This version comes with GitHub automatic updates enabled.
 
 = 0.1 =
 This version fixes a security related bug.  Please update this immediately.

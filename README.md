@@ -33,6 +33,14 @@ Oh, that's the default.  If you don't set a value in the CTA Button Text, it'll 
 
 ## Changelog
 
+**0.9**
+* ALPHA testing complete.
+* Small edits to source code and readme file(s)
+
+**0.5**
+* Enabled GitHub Updater
+* Small edits to source code and readme file(s)
+
 **0.2**
 * Reusable plugin created.
 * Version updated.

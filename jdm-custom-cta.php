@@ -4,7 +4,7 @@
  * Plugin Name: JDM Custom CTA
  * Plugin URI: http://labs.jdmdigital.co/code/jdm-custom-cta/
  * Description: There are many cases when theme developers may want the ability to add a call-to-action (or CTA) button to their theme that's easily editable from the WordPress backend. This reusable plugin does just that, and nothing more.
- * Version: 0.5
+ * Version: 0.9
  * Author: JDM Digital
  * Author URI: http://jdmdigital.co
  * License: GPLv2 or later
